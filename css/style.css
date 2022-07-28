@@ -1,0 +1,216 @@
+header h1 span {
+  color: #00ff00;
+}
+
+.header.sticked {
+  background-color: black;
+}
+
+.navbar .get-a-quote {
+  border: none;
+  background-color: #007500;
+  font-size: 16px;
+}
+.navbar .get-a-quote:hover {
+  background-color: #007500;
+}
+.navbar .get-a-quote a {
+  display: inline;
+  color: white;
+  padding: 0;
+}
+.navbar .get-a-quote a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
+@media (max-width: 1279px) {
+  .navbar ul {
+    background-color: black;
+  }
+}
+.hero {
+  background-image: linear-gradient(to right, rgba(0, 163, 0, 0.6), rgba(0, 163, 0, 0.6)), url(../images/farm-hero.jpg);
+}
+
+.actions {
+  display: flex;
+  gap: 2rem;
+}
+.actions > a {
+  border: none;
+}
+.actions .action.farm {
+  background-color: #007500;
+}
+.actions .action.customer {
+  color: rgb(0, 163, 0);
+  transition: all 300ms ease-out;
+}
+.actions .action.customer:hover {
+  color: white;
+  background-color: rgb(0, 163, 0);
+}
+
+.featured-services .row.gy-4 {
+  display: flex;
+  justify-content: space-between;
+}
+.featured-services i {
+  color: #00ff00 !important;
+}
+
+.about.pt-0 {
+  margin-top: 5rem;
+}
+
+.about .content h3 {
+  color: black;
+  display: grid;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.about .content h3::after {
+  content: " ";
+  display: block;
+  width: 70%;
+  height: 0.3rem;
+  background-color: #00ff00;
+  justify-self: end;
+}
+
+.col-lg-6.content.order-last.order-lg-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.services .section-header h2 {
+  color: black;
+}
+.services .section-header h2::after {
+  display: none;
+}
+.services .farms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+.services .farms .card {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(1fr, 6);
+  grid-template-areas: "name name name name name logo" "prod prod harv harv harv harv";
+  align-items: center;
+  gap: 2rem 0;
+  border: 1px solid #bdffbd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: background-color 300ms ease-out;
+}
+@media (max-width: 1279px) {
+  .services .farms .card {
+    grid-template-areas: "logo logo logo logo logo logo" "name name name name name name" "harv harv harv harv harv harv" "prod prod prod prod prod prod";
+  }
+}
+.services .farms .card:hover {
+  background-color: #00ff00;
+}
+.services .farms .card .name {
+  grid-area: name;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: black;
+}
+.services .farms .card .type-or-logo {
+  grid-area: logo;
+  height: 2rem;
+  width: 2rem;
+  overflow-y: hidden;
+}
+.services .farms .card .type-or-logo img {
+  width: 100%;
+  height: 110%;
+}
+.services .farms .card .produce {
+  grid-area: prod;
+  font-weight: 800;
+  color: #007500;
+}
+.services .farms .card .harvest {
+  grid-area: harv;
+  font-weight: 800;
+}
+.services .farms .card .harvest .span-title {
+  font-weight: 100;
+  font-size: 13px;
+}
+.services .post-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+.services .post-section a {
+  border: none;
+  background-color: #007500;
+  border-radius: 0;
+  transition: background-color 300ms ease-out;
+}
+.services .post-section a:hover {
+  background-color: black;
+}
+
+body.other {
+  padding-top: 6rem;
+}
+
+.header.other {
+  background-color: black;
+}
+.header.other.sticked {
+  background-color: black;
+}
+
+.service-details .category {
+  margin-block: 1rem;
+}
+.service-details .category-title {
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+.service-details li.category {
+  display: grid;
+}
+.service-details li.category i {
+  color: black;
+  font-size: inherit;
+}
+
+.service-details h3 {
+  color: black;
+  font-size: 30px;
+}
+
+.service-details .services-list {
+  border-color: #bdffbd;
+  border-radius: 0.5rem;
+}
+.service-details .services-list h2 {
+  font-weight: 800;
+}
+.service-details .services-list .categories {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: black;
+}
+
+.scroll-top {
+  background-color: #007500;
+}
+.scroll-top:hover {
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */
