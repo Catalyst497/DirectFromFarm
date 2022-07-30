@@ -132,21 +132,7 @@
 							/>
 							<h3>Johnson and Jons Farm</h3>
 							<p>Johnson and Jons harvest period goes like this:</p>
-							<form id="paymentForm">
-								<!-- <li>
-									<i class="bi bi-check-circle"></i>
-									<span>Aut eum totam accusantium voluptatem.</span>
-								</li>
-								<li>
-									<i class="bi bi-check-circle"></i>
-									<span
-										>Assumenda et porro nisi nihil nesciunt voluptatibus.</span
-									>
-								</li>
-								<li>
-									<i class="bi bi-check-circle"></i>
-									<span>Ullamco laboris nisi ut aliquip ex ea</span>
-								</li> -->
+							<form>
 								<li class="category">
 									<div class="category-title">Egg</div>
 									<div>Available on: 12th Sept, 2022</div>
@@ -159,15 +145,6 @@
 									<div class="category-title">Layer</div>
 									<div>Available on: 10th Oct, 2022</div>
 								</li>
-								<div class="order">
-									<button
-										type="button"
-										onclick="makePayment()"
-										class="btn btn-large btn-sucess order-now"
-									>
-										Order Now
-									</button>
-								</div>
 							</form>
 						</div>
 						<div class="col-lg-4">
@@ -194,7 +171,7 @@
 									</div>
 								</div>
 							</div>
-							<form>
+							<form class="paymentForm">
 								<h3>Order your produce</h3>
 								<p>Please fill the form below</p>
 								<div>
@@ -205,10 +182,36 @@
 									<div>Phone Number:</div>
 									<input type="number" class="form-control" />
 								</div>
-								<div class="input-style">
+								<div class="input-style form-control">
 									<div class="quantity-div">
-										<input type="number" name="quantity" id="quantity" />
+										<div class="name">Quantity</div>
+										<input
+											type="number"
+											name="quantity"
+											id="quantity"
+											class="form-control"
+											placeholder="2"
+										/>
 									</div>
+									<div class="produce-div">
+										<div class="name">Produce</div>
+										<input
+											type="text"
+											name="produce"
+											id="produce"
+											class="produce form-control"
+											placeholder="eggs"
+										/>
+									</div>
+								</div>
+								<div class="order">
+									<button
+										type="button"
+										onclick="makePayment()"
+										class="btn btn-large btn-sucess order-now"
+									>
+										Order Now
+									</button>
 								</div>
 							</form>
 						</div>

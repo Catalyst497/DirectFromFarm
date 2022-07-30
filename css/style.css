@@ -1,3 +1,9 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 header h1 span {
   color: #00ff00;
 }
@@ -211,6 +217,30 @@ body.other {
   margin-bottom: 1rem;
 }
 
+.paymentForm {
+  margin-top: 4rem;
+}
+.paymentForm > * {
+  margin-bottom: 1rem;
+}
+.paymentForm .name {
+  font-size: 12px;
+}
+.paymentForm .input-style {
+  display: flex;
+}
+.paymentForm .input-style input {
+  border: none;
+  display: flex;
+  gap: 2rem;
+  width: 5rem;
+}
+.paymentForm .input-style input:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 1px black;
+}
+
 .contact {
   padding-top: 30px;
   padding-bottom: 80px;
@@ -252,10 +282,6 @@ body.other {
 .contact .row .form-group.mt-3 .input-style input:focus {
   border: none;
   outline: none;
-}
-.contact .row .form-group.mt-3 .input-style input::-webkit-inner-spin-button, .contact .row .form-group.mt-3 .input-style input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 .contact .add-inputs {
   text-align: end;
