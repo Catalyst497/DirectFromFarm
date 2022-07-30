@@ -46,8 +46,6 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 
-		<script src="https://checkout.flutterwave.com/v3.js"></script>
-
 		<!-- =======================================================
   * Template Name: Logis - v1.1.0
   * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
@@ -57,6 +55,12 @@
 	</head>
 
 	<body class="other">
+		<!-- Modal -->
+		<div class="modal-overlay">
+			<div class="modal-content">
+				<h1>Hi. I love you.</h1>
+			</div>
+		</div>
 		<!-- ======= Header ======= -->
 		<header
 			id="header"
@@ -120,102 +124,128 @@
 		<!-- End Header -->
 
 		<main id="main">
-			<!-- ======= Service Details Section ======= -->
-			<section id="service-details" class="service-details">
+			<!-- ======= Contact Section ======= -->
+			<section id="contact" class="contact">
 				<div class="container" data-aos="fade-up">
-					<div class="row gy-4">
+					<div class="row gy-4 mt-4">
+						<div class="col-lg-4">
+							<!-- <div class="info-item d-flex">
+								<i class="bi bi-geo-alt flex-shrink-0"></i>
+								<div>
+									<h4>Location:</h4>
+									<p>A108 Adam Street, New York, NY 535022</p>
+								</div>
+							</div> -->
+							<!-- End Info Item -->
+
+							<!-- <div class="info-item d-flex">
+								<i class="bi bi-envelope flex-shrink-0"></i>
+								<div>
+									<h4>Email:</h4>
+									<p>info@example.com</p>
+								</div>
+							</div> -->
+							<!-- End Info Item -->
+
+							<!-- <div class="info-item d-flex">
+								<i class="bi bi-phone flex-shrink-0"></i>
+								<div>
+									<h4>Call:</h4>
+									<p>+1 5589 55488 55</p>
+								</div>
+							</div> -->
+							<h1 class="intro">Let's get you your customers already.</h1>
+							<p>Please fill the form below to continue.</p>
+							<!-- End Info Item -->
+						</div>
+
 						<div class="col-lg-8">
-							<img
-								src="images/poultry.jpg"
-								alt=""
-								class="img-fluid services-img"
-							/>
-							<h3>Johnson and Jons Farm</h3>
-							<p>Johnson and Jons harvest period goes like this:</p>
-							<form id="paymentForm">
-								<!-- <li>
-									<i class="bi bi-check-circle"></i>
-									<span>Aut eum totam accusantium voluptatem.</span>
-								</li>
-								<li>
-									<i class="bi bi-check-circle"></i>
-									<span
-										>Assumenda et porro nisi nihil nesciunt voluptatibus.</span
-									>
-								</li>
-								<li>
-									<i class="bi bi-check-circle"></i>
-									<span>Ullamco laboris nisi ut aliquip ex ea</span>
-								</li> -->
-								<li class="category">
-									<div class="category-title">Egg</div>
-									<div>Available on: 12th Sept, 2022</div>
-								</li>
-								<li class="category">
-									<div class="category-title">Broiler</div>
-									<div>Available on: 5th Aug, 2022</div>
-								</li>
-								<li class="category">
-									<div class="category-title">Layer</div>
-									<div>Available on: 10th Oct, 2022</div>
-								</li>
-								<div class="order">
-									<button
-										type="button"
-										onclick="makePayment()"
-										class="btn btn-large btn-sucess order-now"
-									>
-										Order Now
+							<form
+								action="forms/contact.php"
+								method="post"
+								role="form"
+								class="php-email-form"
+							>
+								<h4>Company Name and Address</h4>
+								<div class="inputs">
+									<div class="row">
+										<div class="col-md-6 form-group">
+											<input
+												type="text"
+												name="name"
+												class="form-control"
+												id="name"
+												placeholder="Company Name"
+												required
+											/>
+										</div>
+										<div class="col-md-6 form-group mt-3 mt-md-0">
+											<input
+												type="email"
+												class="form-control"
+												name="address"
+												id="address"
+												placeholder="Your Address"
+												required
+											/>
+										</div>
+									</div>
+									<h4>List your Produce</h4>
+									<div class="form-group mt-3">
+										<div class="form-dan">
+											<div class="input-title">Produce</div>
+											<input class="form-control" type="text" name="" id="" />
+										</div>
+										<div class="form-dan">
+											<div class="input-title">Price</div>
+											<div class="form-control input-style">
+												<span><i class="fa-solid fa-naira-sign"></i></span>
+												<input type="number" name="" id="" /><span>per</span
+												><input type="text" name="" id="" />
+											</div>
+										</div>
+										<div>
+											<div class="input-title">Harvest Time</div>
+											<input
+												type="date"
+												name="date"
+												id="date"
+												class="form-control"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="add-inputs">
+									<button type="button" class="btn btn-large btn-success plus">
+										Add another produce <i class="fa-solid fa-plus"></i>
 									</button>
 								</div>
-							</form>
-						</div>
-						<div class="col-lg-4">
-							<div class="services-list">
-								<h2>Pricing</h2>
-								<div class="categories">
-									<div class="category">
-										<div class="category-title">Egg</div>
-										<div>
-											<i class="fa-solid fa-naira-sign"></i>700 per crate
-										</div>
-									</div>
-									<div class="category">
-										<div class="category-title">Broiler</div>
-										<div>
-											<i class="fa-solid fa-naira-sign"></i>1500 per fowl
-										</div>
-									</div>
-									<div class="category">
-										<div class="category-title">Layer</div>
-										<div>
-											<i class="fa-solid fa-naira-sign"></i>1200 per fowl
-										</div>
+								<!-- <div class="form-group mt-3">
+									<textarea
+										class="form-control"
+										name="message"
+										rows="5"
+										placeholder="Message"
+										required
+									></textarea>
+								</div> -->
+								<div class="my-3">
+									<div class="loading">Loading</div>
+									<div class="error-message"></div>
+									<div class="sent-message">
+										Your message has been sent. Thank you!
 									</div>
 								</div>
-							</div>
-							<form>
-								<h3>Order your produce</h3>
-								<p>Please fill the form below</p>
-								<div>
-									<div>Email:</div>
-									<input type="email" class="form-control" />
-								</div>
-								<div>
-									<div>Phone Number:</div>
-									<input type="number" class="form-control" />
-								</div>
-								<div class="input-style">
-									<div class="quantity-div">
-										<input type="number" name="quantity" id="quantity" />
-									</div>
+								<div class="text-center">
+									<button type="submit">Send Message</button>
 								</div>
 							</form>
 						</div>
+						<!-- End Contact Form -->
 					</div>
 				</div>
 			</section>
-			<!-- End Service Details Section -->
+			<!-- End Contact Section -->
 		</main>
 		<!-- End #main -->
 
@@ -305,33 +335,7 @@
 
 		<!-- Template Main JS File -->
 		<script src="assets/js/main.js"></script>
-
 		<!-- Custom Form JS File -->
-		<script>
-			function makePayment() {
-				FlutterwaveCheckout({
-					public_key: 'FLWPUBK_TEST-SANDBOXDEMOKEY-X',
-					tx_ref: 'titanic-48981487343MDI0NzMx',
-					amount: 54600,
-					currency: 'NGN',
-					payment_options: 'card, banktransfer, ussd',
-					redirect_url: 'index.html',
-					meta: {
-						consumer_id: 23,
-						consumer_mac: '92a3-912ba-1192a',
-					},
-					customer: {
-						email: 'rose@unsinkableship.com',
-						phone_number: '08102909304',
-						name: 'Rose DeWitt Bukater',
-					},
-					customizations: {
-						title: 'DirectFromFarm',
-						description: 'Payment for an awesome cruise',
-						logo: '',
-					},
-				});
-			}
-		</script>
+		<script src="js/custom-form.js"></script>
 	</body>
 </html>

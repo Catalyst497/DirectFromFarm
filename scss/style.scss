@@ -185,7 +185,7 @@ header {
 
 // OTHER PAGES
 body.other {
-	padding-top: 6rem;
+	padding-top: 5.5rem;
 }
 .header.other {
 	background-color: $clr-green-0;
@@ -210,6 +210,13 @@ body.other {
 			font-size: inherit;
 		}
 	}
+	.order {
+		margin-top: 1rem;
+		button.order-now {
+			background-color: $clr-green-1;
+			color: white;
+		}
+	}
 }
 .service-details h3 {
 	color: $clr-green-0;
@@ -225,6 +232,98 @@ body.other {
 	.categories {
 		margin-top: 1rem;
 		margin-bottom: 1rem;
+	}
+}
+
+//CONTACT
+.contact {
+	padding-top: 30px;
+	padding-bottom: 80px;
+	.icon {
+		text-align: start;
+		font-size: 5rem;
+		padding-left: 2rem;
+		color: $clr-green-2;
+	}
+	h1 {
+		font-weight: 800;
+	}
+	.row.gy-4 .col-lg-4 {
+		background: linear-gradient(
+				to right,
+				rgba(255, 255, 255, 0.5),
+				rgba(255, 255, 255, 0.5)
+			),
+			url(../images/forms.svg);
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.row {
+		.form-group.mt-3 {
+			display: flex;
+			justify-content: space-between;
+			@media (max-width: 1279px) {
+				flex-direction: column;
+			}
+			input {
+				// width: max-content;
+			}
+			.input-style {
+				display: flex;
+				input {
+					border: none;
+					width: 4rem;
+					height: 2rem;
+
+					&:focus {
+						border: none;
+						outline: none;
+					}
+					&::-webkit-inner-spin-button,
+					&::-webkit-outer-spin-button {
+						-webkit-appearance: none;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+	.add-inputs {
+		text-align: end;
+		padding-top: 1rem;
+		font-size: 14px;
+		button {
+			// border-radius: 50%;
+			background-color: $clr-green-1;
+			@include transition(all);
+			&:hover {
+				background-color: $clr-green-0;
+			}
+		}
+	}
+	.php-email-form button[type='submit'] {
+		background-color: $clr-green-1;
+		@include transition(all);
+		&:hover {
+			background-color: $clr-green-0;
+		}
+	}
+}
+.modal-overlay {
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+
+	.modal-content {
+		position: absolute;
+		background: white;
+		inset: 50% auto auto 50%;
+		transform: translate(-50%, -50%);
+		max-width: 30rem;
 	}
 }
 
