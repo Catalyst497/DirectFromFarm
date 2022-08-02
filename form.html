@@ -4,13 +4,9 @@
 		<meta charset="utf-8" />
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-		<title>Logis Bootstrap Template - Index</title>
+		<title>DirectFromFarm</title>
 		<meta content="" name="description" />
 		<meta content="" name="keywords" />
-
-		<!-- Favicons -->
-		<link href="assets/img/favicon.png" rel="icon" />
-		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,7 +54,14 @@
 		<!-- Modal -->
 		<div class="modal-overlay">
 			<div class="modal-content">
-				<h1>Hi. I love you.</h1>
+				<div class="img">
+					<img src="images/outer_space.svg" alt="outer_space" />
+				</div>
+				<h1>Your details are on the way.</h1>
+				<p>We'll get back to you soon.</p>
+				<a class="btn btn-large btn-success action" href="index.html">
+					Alright, Great
+				</a>
 			</div>
 		</div>
 		<!-- ======= Header ======= -->
@@ -79,36 +82,11 @@
 				<i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 				<nav id="navbar" class="navbar">
 					<ul>
-						<li><a href="index.html" class="active">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="pricing.html">Pricing</a></li>
-						<li class="dropdown">
-							<a href="#"
-								><span>Drop Down</span>
-								<i class="bi bi-chevron-down dropdown-indicator"></i
-							></a>
-							<ul>
-								<li><a href="#">Drop Down 1</a></li>
-								<li class="dropdown">
-									<a href="#"
-										><span>Deep Drop Down</span>
-										<i class="bi bi-chevron-down dropdown-indicator"></i
-									></a>
-									<ul>
-										<li><a href="#">Deep Drop Down 1</a></li>
-										<li><a href="#">Deep Drop Down 2</a></li>
-										<li><a href="#">Deep Drop Down 3</a></li>
-										<li><a href="#">Deep Drop Down 4</a></li>
-										<li><a href="#">Deep Drop Down 5</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Drop Down 2</a></li>
-								<li><a href="#">Drop Down 3</a></li>
-								<li><a href="#">Drop Down 4</a></li>
-							</ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="farms.html">Find Farmers</a></li>
+						<li><a href="form.html" class="active">Find Buyers</a></li>
+						<li><a href="#footer">Contact</a></li>
 						<li>
 							<button class="get-a-quote" href="get-a-quote.html">
 								<a href="/register" class="auth">Register</a> /
@@ -129,31 +107,6 @@
 				<div class="container" data-aos="fade-up">
 					<div class="row gy-4 mt-4">
 						<div class="col-lg-4">
-							<!-- <div class="info-item d-flex">
-								<i class="bi bi-geo-alt flex-shrink-0"></i>
-								<div>
-									<h4>Location:</h4>
-									<p>A108 Adam Street, New York, NY 535022</p>
-								</div>
-							</div> -->
-							<!-- End Info Item -->
-
-							<!-- <div class="info-item d-flex">
-								<i class="bi bi-envelope flex-shrink-0"></i>
-								<div>
-									<h4>Email:</h4>
-									<p>info@example.com</p>
-								</div>
-							</div> -->
-							<!-- End Info Item -->
-
-							<!-- <div class="info-item d-flex">
-								<i class="bi bi-phone flex-shrink-0"></i>
-								<div>
-									<h4>Call:</h4>
-									<p>+1 5589 55488 55</p>
-								</div>
-							</div> -->
 							<h1 class="intro">Let's get you your customers already.</h1>
 							<p>Please fill the form below to continue.</p>
 							<!-- End Info Item -->
@@ -164,7 +117,7 @@
 								action="forms/contact.php"
 								method="post"
 								role="form"
-								class="php-email-form"
+								class=""
 							>
 								<h4>Company Name and Address</h4>
 								<div class="inputs">
@@ -181,7 +134,7 @@
 										</div>
 										<div class="col-md-6 form-group mt-3 mt-md-0">
 											<input
-												type="email"
+												type="text"
 												class="form-control"
 												name="address"
 												id="address"
@@ -220,24 +173,13 @@
 										Add another produce <i class="fa-solid fa-plus"></i>
 									</button>
 								</div>
-								<!-- <div class="form-group mt-3">
-									<textarea
-										class="form-control"
-										name="message"
-										rows="5"
-										placeholder="Message"
-										required
-									></textarea>
-								</div> -->
-								<div class="my-3">
-									<div class="loading">Loading</div>
-									<div class="error-message"></div>
-									<div class="sent-message">
-										Your message has been sent. Thank you!
-									</div>
-								</div>
 								<div class="text-center">
-									<button type="submit">Send Message</button>
+									<button
+										type="button"
+										class="btn btn-large btn-success submit"
+									>
+										DONE!
+									</button>
 								</div>
 							</form>
 						</div>

@@ -7,4 +7,8 @@ addProduceBtn.addEventListener('click', () => {
 	inputsContain.insertAdjacentHTML('beforeend', toInsertHtml);
 });
 
-// PAYSTACK
+// MODAL
+const modal = document.querySelector('.modal-overlay'),
+	submitBtn = document.querySelector('.submit');
+
+submitBtn.addEventListener('click', () => modal.classList.add('modal-show'));

@@ -1,0 +1,32 @@
+header {
+	h1 {
+		span {
+			color: $clr-green-3;
+		}
+	}
+}
+.header.sticked {
+	background-color: darken($clr-green-1, 50%);
+}
+.navbar .get-a-quote {
+	border: none;
+	background-color: $clr-green-1;
+	font-size: 16px;
+	&:hover {
+		background-color: $clr-green-1;
+	}
+	a {
+		display: inline;
+		color: white;
+		padding: 0;
+		&:hover {
+			text-decoration: underline;
+			text-decoration-color: white;
+		}
+	}
+}
+@media (max-width: 1279px) {
+	.navbar ul {
+		background-color: $clr-green-0;
+	}
+}

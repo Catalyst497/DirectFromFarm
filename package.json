@@ -1,0 +1,19 @@
+{
+  "name": "directfromfarm",
+  "version": "1.0.0",
+  "description": "A project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Catalyst497/DirectFromFarm.git"
+  },
+  "author": "Catalyst",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Catalyst497/DirectFromFarm/issues"
+  },
+  "homepage": "https://github.com/Catalyst497/DirectFromFarm#readme"
+}

@@ -1,0 +1,63 @@
+.service-details {
+	.category {
+		margin-block: 1rem;
+	}
+	.category-title {
+		font-weight: 800;
+		margin-bottom: 0.2rem;
+	}
+	li.category {
+		display: grid;
+		i {
+			color: black;
+			font-size: inherit;
+		}
+	}
+	.order {
+		margin-top: 1rem;
+		button.order-now {
+			background-color: $clr-green-1;
+			color: white;
+		}
+	}
+}
+.service-details h3 {
+	color: $clr-green-0;
+	font-size: 30px;
+}
+.service-details .services-list {
+	border-color: $clr-green-4;
+	border-radius: 0.5rem;
+	h2 {
+		font-weight: 800;
+	}
+
+	.categories {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+}
+.paymentForm {
+	margin-top: 4rem;
+
+	> * {
+		margin-bottom: 1rem;
+	}
+	.name {
+		font-size: 12px;
+	}
+	.input-style {
+		display: flex;
+		input {
+			border: none;
+			display: flex;
+			gap: 2rem;
+			width: 5rem;
+			&:focus {
+				border: none;
+				outline: none;
+				box-shadow: 0 0 0 1px black;
+			}
+		}
+	}
+}
